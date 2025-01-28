@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+.fan-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation: App-logo-spin infinite 20s linear;
+}
+.circle{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #61dafb;
+  top: 50%;
+  left: 50%;
+}
+
+.rectangle{
+  width: 50px;
+  height: 150px;
+  background-color: #61dafb;
+  margin: 20px 0;
+}
+.rectangle1{
+  width: 150px;
+  height: 50px;
+  background-color: #61dafb;
+  margin: 0px 20px;
+}
+.all-in-one{
+  display: flex;
+}
