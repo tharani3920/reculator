@@ -42,7 +42,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 2s linear;
 }
 .circle{
   width: 50px;
