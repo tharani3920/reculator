@@ -61,3 +61,5 @@ import logo from './logo.svg';
        </header>
      </div>
    );
+}
+export default App;
