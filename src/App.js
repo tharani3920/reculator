@@ -8,14 +8,14 @@ import logo from './logo.svg';
    function setSpeed(speed) {
      const speedControl = {
        0: 'none',
-       1: '20s',
-       2: '10s',
-       3: '5s',
-       4: '3s',
-       5: '1s',
+       1: '2s',
+       2: '1.5s',
+       3: '1s',
+       4: '0.5s',
+       5: '0.1s',
      };
  
-     const duration = speedControl[speed] || '20s';
+     const duration = speedControl[speed] || '2s';
  
      if (fanRef.current) {
        fanRef.current.style.animation =
