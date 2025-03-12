@@ -1,28 +1,26 @@
 import React, { useRef } from 'react';
 import './App.css';
 
-function App() {
-  const fanRef = useRef(null); // Create a ref to reference the fan-div element
+function setSpeed(speed) {
+  const speedControl = {
+    0: 'none',
+    1: '10s',  // Faster than before
+    2: '5s',
+    3: '3s',
+    4: '2s',
+    5: '0.8s', // Increased speed significantly
+  };
 
-  function setSpeed(speed) {
-    const speedControl = {
-      0: 'none',
-      1: '20s',
-      2: '10s',
-      3: '5s',
-      4: '3s',
-      5: '1s',
-    };
+  const duration = speedControl[speed] || '10s';
 
-    const duration = speedControl[speed] || '20s';
-
-    if (fanRef.current) {
-      fanRef.current.style.animation =
-        duration === 'none'
-          ? 'none'
-          : `App-logo-spin infinite ${duration} linear`;
-    }
+  if (fanRef.current) {
+    fanRef.current.style.animation =
+      duration === 'none'
+        ? 'none'
+        : `App-logo-spin infinite ${duration} linear`;
   }
+}
+
 
   return (
     <div className="App">
